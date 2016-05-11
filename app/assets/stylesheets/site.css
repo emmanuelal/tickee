@@ -1,0 +1,7 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+header { width:100%; padding: 0.5%; background:#181818; }
+header #logo {  font-weight:bold; color:#FFF;}
