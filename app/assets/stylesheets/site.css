@@ -79,4 +79,25 @@ header #logo h1 {  font-weight:bold; color:#FFF;}
 	padding: 1%;
 	font-weight: bold;
 }
+#submit input:hover{
+	background:#000;
+    color:#FFF;
+    cursor: pointer;	
+}
+#list_holder{
+	 width: 60%;
+	 padding: 1%;
+	 height: auto;
+	 background:#FFF;
+	 border: 0;
+	 border-radius: 5px;
+	 box-shadow: 0px 1px 1px #000;
+}
+#list_holder ul {
+	 list-style-type: none;
+}
+#list_holder ul li {
+	padding: 1%;
+	border-bottom: thin solid #eee;
+}
 
