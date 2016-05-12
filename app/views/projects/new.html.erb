@@ -2,6 +2,9 @@
     
     <div class=" information_holder ">
     	<h2>Create New Project </h2>
+    	<p id="title">
+           Start your new project here. 
+    	</p>
 
        <%= form_for(@project)  do |f| %>
        <div id="project_name">
@@ -19,7 +22,7 @@
                 <%= f.label :description %>
             </div><!-- description -->
             <div id="description_input">
-                <%= f.text_field :description , :placeholder =>"Project Description" %>
+                <%= f.text_field :description , :placeholder =>"Project  Description" %>
             </div><!-- description input -->
 
        </div><!-- description -->

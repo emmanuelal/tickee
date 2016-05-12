@@ -26,7 +26,12 @@ header {
 	   }
 
 header #logo h1 {  font-weight:bold; color:#FFF;}
-
+#title{
+	margin-bottom: 2%;
+	color: #FFF;
+	font-size: 90%;
+	font-weight: bold;
+}
 .information_holder h2 {
 	 margin-top:1%;
 	 margin-bottom: 2%;
