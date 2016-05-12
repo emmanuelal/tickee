@@ -100,4 +100,28 @@ header #logo h1 {  font-weight:bold; color:#FFF;}
 	padding: 1%;
 	border-bottom: thin solid #eee;
 }
+.flash{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: #FFF;
+}
 
+#error_explanation{
+	background:red;
+	padding: 1%;
+	color: #fff;
+	width: 40%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	margin-top: 1%;
+}
+#error_explanation ul {
+	list-style-type: none;
+}
+#error_explanation h2{
+	font-size: 90%;
+	margin-bottom: 1%;
+
+}
