@@ -3,5 +3,75 @@
 	margin:0;
 	box-sizing:border-box;
 }
-header { width:100%; padding: 0.5%; background:#181818; }
-header #logo {  font-weight:bold; color:#FFF;}
+
+body{
+
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	background:#262626;
+}
+a:link{
+ text-decoration:none;
+}
+
+a:visited{
+  color:#eee;
+}
+
+.container{ width: 90%; margin:0 auto; }
+header { 
+	   width:100%; 
+	   padding: 0.4%;
+	   background:#181818;
+	   border-bottom: thin solid #eee;
+	   }
+
+header #logo h1 {  font-weight:bold; color:#FFF;}
+
+.information_holder h2 {
+	 margin-top:1%;
+	 margin-bottom: 2%;
+	 font-family: Arial,sans-serif;
+	 color:#FFF;
+}
+.information_holder{
+	margin-top:2%;
+}
+.label{
+	color:#fff;
+	margin-bottom: 0.5%;
+	font-weight: bold;
+} 
+#prject_name_input{
+  margin-bottom: 2%;
+}
+
+#prject_name_input input{
+	width: 40%;
+	padding: 1%;
+	border: thin solid #eee;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+
+
+}
+#description_input input{
+	 width: 40%;
+	 padding: 1%;
+	border: thin solid #eee;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#submit{
+	margin-top: 2%;
+}
+#submit input{
+	border:0;
+	background:#FFF;
+	color:#000;
+	padding: 1%;
+	font-weight: bold;
+}
+
