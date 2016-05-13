@@ -1,7 +1,7 @@
 require "rails_helper"
         RSpec.feature "Users can edit existing projects" do
               before do
-              FactoryGirl.create(:project, name: "Sublime Text 3")
+              FactoryGirl.create(:project, name: "Sublime Text 3",description: "new text editor")
               visit "/"
               click_link "Sublime Text 3"
              click_link "Edit Project"
