@@ -1,7 +1,22 @@
 <% @title = "Home | Ticketee"%>
 <div class="container">
   <div class=" information_holder row ">
-   <%= notice %>
-   <%= link_to "New Project", new_project_path %>
+    <h2>Projects</h2>
+       <%= link_to "Create Project", new_project_path ,:class=>'button_black'%>
+<div id="projects">
+<% @projects.each do |project| %>
+         <ul>
+              <li>
+           	      <h2><%= link_to project.name, project %></h2>
+                  <p><%= project.description %></p>
+                  <span class='time_ago'> created <%= time_ago_in_words(project.created_at) %></span>
+            </li>
+         </ul>  
+<% end %>
+</div>
+
+      
+  
  </div><!-- information_holder -->
+
 </div><!-- container -->

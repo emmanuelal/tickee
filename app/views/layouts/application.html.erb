@@ -3,7 +3,9 @@
  <div class="container">
   
    <% flash.each do |key, message| %>
-      <div class="flash"><%= message %></div>
+      <div class="flash"><%= message %>
+         <div id="close">X</div><!--close -->
+      </div>
  <% end %>
 
  </div>

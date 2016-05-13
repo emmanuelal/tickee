@@ -1,18 +1,21 @@
 <div class="container">
     <% title(@project.name, "Projects") %>
+
     <div class=" information_holder ">
-    	
+            	
     	<h2>Current Projects </h2>
     	  <div id="list_holder">
                <ul>
                    <li> 
                    	   <h3><%= @project.name %></h3>
                        <p><%= @project.description %><p>
-                       <span><%= @project.created_at %></span>
+                       <span class='timeago'> created <%= time_ago_in_words(@project.created_at) %></span>
                    </li>
 
                </ul><!-- unorder list-->
 
     	  </div><!-- list_holder -->
     </div><!-- information_holder -->	
+    <br>
+    <%= link_to "Edit Project", edit_project_path(@project) , :class=>"edit_button" %>
 </div><!-- container-->

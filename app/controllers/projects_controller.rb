@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
       def index
+         @projects = Project.all
       end	
       
       def new
@@ -7,6 +8,7 @@ class ProjectsController < ApplicationController
       end	
 
       def edit
+        @project = Project.find(params[:id])
       end
 
       def create
@@ -23,6 +25,14 @@ class ProjectsController < ApplicationController
       def show
           @project = Project.find(params[:id])
       end
+
+      def update
+         @project = Project.find(params[:id])
+         @project.update(project_params)
+          
+          flash[:notice] = "Project has been updated."
+          redirect_to @project
+      end  
            
      private
          def project_params
