@@ -16,16 +16,21 @@ a:link{
 a:visited{
   color:#eee;
 }
+p{ color:#fff; font-weight: bold; }
 
 .container{ width: 90%; margin:0 auto; }
 header { 
 	   width:100%; 
-	   padding: 0.4%;
+	   padding: 0.7%;
 	   background:#181818;
 	   border-bottom: thin solid #eee;
 	   }
 
 header #logo h1 {  font-weight:bold; color:#FFF;}
+header #logo h1 a:hover{
+	background:none;
+}
+
 #title{
 	margin-bottom: 2%;
 	color: #FFF;
@@ -100,6 +105,10 @@ header #logo h1 {  font-weight:bold; color:#FFF;}
 	padding: 0.5%;
 	font-weight: bold;
 }
+.button_black:hover{
+	color: #FFF !important;
+}
+
 .edit_button{
     margin-top: 2% !important;
     border:0;
@@ -215,12 +224,12 @@ header #logo h1 {  font-weight:bold; color:#FFF;}
 	 color: #FFF;
 }
 .time_ago{
-	font-size: 60%;
+	font-size: 70%;
 	color:#fafafa;
 }
 
 .timeago{
-	font-size: 60%;
+	font-size: 70%;
 	color:#aaa;
 	margin-top:4% !important;
 }
@@ -237,3 +246,36 @@ header #logo h1 {  font-weight:bold; color:#FFF;}
 }
 
 
+::-webkit-input-placeholder {
+   color: #181818;
+   font-weight: normal;
+}
+::-webkit-textarea-placeholder {
+   color: #181818;
+   font-weight:bold;
+}
+
+
+:-moz-placeholder { /* Firefox 18- */
+   color:#181818;  
+   font-weight: normal;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #181818; 
+   font-weight: normal; 
+}
+
+:-ms-input-placeholder {  
+   color: #181818; 
+   font-weight: normal; 
+}
+
+.ticket_name{
+   font-weight: bold;
+   color: #FFF;
+   width: 20%;
+   border-bottom: thin solid #eee;
+}
+
+#show{ margin-top: 2%;}

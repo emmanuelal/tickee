@@ -1,0 +1,15 @@
+<div class="container">
+   <div class=" information_holder ">
+   	    <div id="ticket">
+           <div class="project_name">
+             <h2><%= @project.name %></h2>
+          </div><!-- project name-->
+        
+        <div class="ticket_name">
+              <h3><%= @ticket.name %></h3>
+        </div><!-- ticket_name -->
+
+<p id="show"><%= simple_format(@ticket.description) %></p>
+</div>
+   </div><!-- information_holder-->
+</div><!-- container -->

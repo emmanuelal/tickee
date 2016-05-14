@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "rspec-rails", "~> 3.2.1"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'simple_form'
 # Use Unicorn as the app server
 # ggem "rspec-rails", "~> 3.2.1"em 'unicorn'
 

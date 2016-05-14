@@ -1,0 +1,13 @@
+<%= simple_form_for([project, ticket]) do |f| %>
+
+
+ 
+<div id="prject_name_input">
+   <%= f.input :name %>
+</div>
+<%= f.text_area(:description , size:"68x10" ,placeholder:"Description") %>
+
+<div id="submit">
+    <%= f.button :submit, id: "submit" %>
+</div>  
+<% end %>
