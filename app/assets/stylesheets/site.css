@@ -107,6 +107,10 @@ header #logo h1 a:hover{
 }
 .button_black:hover{
 	color: #FFF !important;
+	transition:all .5s ease-in-out; 
+   	-o-transition:all .5s ease-in-out; 
+   	-moz-transition:all .5s ease-in-out; 
+   	-webkit-transition:all .5s ease-in-out;
 }
 
 .edit_button{
@@ -130,7 +134,11 @@ header #logo h1 a:hover{
 #submit input:hover{
 	background:#000;
     color:#FFF;
-    cursor: pointer;	
+    cursor: pointer;
+    transition:all .5s ease-in-out; 
+   	-o-transition:all .5s ease-in-out; 
+   	-moz-transition:all .5s ease-in-out; 
+   	-webkit-transition:all .5s ease-in-out;	
 }
 #list_holder{
 	 width: 60%;
@@ -277,5 +285,33 @@ header #logo h1 a:hover{
    width: 20%;
    border-bottom: thin solid #eee;
 }
+.delete{
+	margin-top: 2%;
+}
+.delete > a{ 
+	display:block; 
+	background:#181818;
+ 	color:red !important;
+    width: 15%;
+    text-align: center;
+    padding: 0.4%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
 
+}
+.delete > a:hover{
+	background:#333;
+	color: #FFF !important;
+	transition:all .5s ease-in-out; 
+   	-o-transition:all .5s ease-in-out; 
+   	-moz-transition:all .5s ease-in-out; 
+   	-webkit-transition:all .5s ease-in-out;
+}
+#dep{color: #181818;}
 #show{ margin-top: 2%;}
+#ticket{}
+ul.tickets li  > a{
+	color: #181818;
+}
