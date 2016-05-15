@@ -10,6 +10,12 @@
         </div><!-- ticket_name -->
 
 <p id="show"><%= simple_format(@ticket.description) %></p>
+<div><%= link_to "Edit Ticket", [:edit, @project, @ticket], class: "edit_button button_1" %></div>
+
+
+<div><%= link_to "Delete Ticket", [@project, @ticket], method: :delete,
+data: { confirm: "Are you sure you want to delete this ticket?"},
+class: "delete" %>
 </div>
    </div><!-- information_holder-->
 </div><!-- container -->
