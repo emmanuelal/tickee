@@ -9,6 +9,17 @@
               <h3><%= @ticket.name %></h3>
         </div><!-- ticket_name -->
 
+        <table id="attributes">
+              <tr>
+                 <th>Author:</th>
+                 <td><%= @ticket.author.email %></td>
+             </tr>
+              <tr>
+                  <th>Created:</th>
+                  <td><%= time_ago_in_words(@ticket.created_at) %> ago</td>
+              </tr>
+        </table>
+
 <p id="show"><%= simple_format(@ticket.description) %></p>
 <div><%= link_to "Edit Ticket", [:edit, @project, @ticket], class: "edit_button button_1" %></div>
 
