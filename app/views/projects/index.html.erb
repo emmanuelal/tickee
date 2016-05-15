@@ -1,8 +1,12 @@
 <% @title = "Home | Ticketee"%>
 <div class="container">
   <div class=" information_holder row ">
-    <h2>Projects</h2>
-       <%= link_to "Create Project", new_project_path ,:class=>'button_black'%>
+    <!-- design look -->
+    <div class="header">
+    <h2 class='f-left'>Projects</h2>
+       <%= link_to "Create Project", new_project_path ,:class=>'button_black f-left'%>
+    </div><!-- header -->  
+     <div class="m-holder">
 <div id="projects">
 <% @projects.each do |project| %>
          <ul>
@@ -15,8 +19,8 @@
 <% end %>
 </div>
 
-      
-  
+ </div><!-- holder-->     
+ <!-- design look --> 
  </div><!-- information_holder -->
 
 </div><!-- container -->

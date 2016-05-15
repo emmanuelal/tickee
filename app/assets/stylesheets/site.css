@@ -36,6 +36,50 @@ header #logo h1 a:hover{
 	background:none;
 }
 
+
+
+.header{
+	width: 96%;
+	background:#3f3f3f;
+	height: 3.2em;
+	border-top: thin solid #aaa;
+	border-bottom: thin solid #aaa;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	margin-top: 2%;
+
+}
+.header h2{
+	color: #FFF !important;
+	margin-left: 1%;
+}
+
+.header .button_black{
+	background:green;
+	margin-left: 2%;
+	margin-top: 0.4%;
+	color: #FFF !important;
+}
+
+.m-holder{
+	width: 96%;
+	border: thin solid #aaa;
+	border-top: none;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+
+}
+
+.f-left{
+	float: left;
+}
+
 #title{
 	margin-bottom: 2%;
 	color: #FFF;
@@ -214,7 +258,7 @@ header #logo h1 a:hover{
 
 }
 #projects{
-	width: 60%;
+	width: 100%;
 	margin-top: 3%;
 
 }
@@ -224,19 +268,17 @@ header #logo h1 a:hover{
 
 #projects  ul li h2 > a {
 	 color: #FFF !important;
-	 font-size: 90%;
+	 font-size: 86%;
 	 font-weight: bold;
 	 text-transform: uppercase;
 }
 
 #projects  ul li  {
-	padding: 0.3%;
+	padding: 0.8%;
 	padding-bottom:0.3%; 
 	border-top: thin solid #333;
 	border-bottom: thin solid #333;
-	border-radius: 5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
+	width: 100%;
 }
 
 
