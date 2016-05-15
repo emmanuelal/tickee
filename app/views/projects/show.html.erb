@@ -11,7 +11,8 @@
                        <p id="dep"><%= @project.description %><p>
                        <span class='timeago'> created <%= time_ago_in_words(@project.created_at) %></span>
 
-                       <div class="delete"><%= link_to "Delete Project", project_path(@project), method: :delete, data: { confirm: "Are you sure you want to delete this project?" }%>
+                       <div class="delete"><%= link_to "Delete Project", admin_project_path(@project), method:  :delete, data: { confirm: "Are you sure you want to delete this project?" },
+                          class: "delete" %>
                       </div><!--delete-->
                    </li>
 

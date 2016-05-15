@@ -1,0 +1,53 @@
+<% title(@project.name, "Create New Project") %>
+
+<div class="container">
+    <% if @project.errors.any? %>
+           <div id="error_explanation">
+           <h2><%= pluralize(@project.errors.count, "error") %>
+                   prohibited this project from being saved:</h2>
+            <ul>
+                <% @project.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+                <% end %>
+            </ul>
+          </div>
+     <% end %>
+     
+<div class=" information_holder ">
+    	<h2>Create New Project </h2>
+    	<p id="title">
+           Start your new project here. 
+    	</p>
+
+       <%= form_for(@project)  do |f| %>
+       <div id="project_name">
+           <div class='label'>
+           	 <%= f.label :name %>
+           </div><!-- label -->
+
+           <div id="prject_name_input">
+                <%= f.text_field :name , :placeholder =>"Project Name"%>
+           </div><!-- project_name input-->
+       </div><!--project name-->
+
+       <div id="description">
+            <div class="label">
+                <%= f.label :description %>
+            </div><!-- description -->
+            <div id="description_input">
+                <%= f.text_field :description , :placeholder =>"Project  Description" %>
+            </div><!-- description input -->
+
+       </div><!-- description -->
+
+       <div id="submit">
+           <%= f.submit %>
+       </div><!-- submit -->
+
+       
+
+    <% end %>
+    </div><!-- information_holder -->
+
+
+</div><!-- container-->

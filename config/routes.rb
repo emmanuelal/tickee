@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :admin do
-  get 'application/index'
+     get 'application/index'
+     resources :projects, only: [:new, :create, :destroy]
   end
 
   devise_for :users
@@ -9,9 +10,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'projects#index'
-  resources :projects do
-    resources :tickets
-  end  
+  
+  resources :projects, only: [:index, :show, :edit, :update] do
+        resources :tickets
+   end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
