@@ -1,3 +1,12 @@
+<div class="container">
+  <div class=" information_holder  ">
+  	<div class="float-left">
+        <h2>USER SIGN IN</h2>
+        <p>Get Sarted with your projects.</p>
+        <p>Manage your Tickets.</p>
+
+  	</div><!-- float_left-->
+  	<div class="float-right">
 <h2>Log in</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -13,3 +22,6 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+   </div><!-- float_left-->
+ </div><!-- information_holder -->
+</div><!-- container-->

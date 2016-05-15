@@ -50,7 +50,7 @@ header #logo h1 a:hover{
 }
 .information_holder{
 	margin-top:2%;
-	width: 50%;
+	width: 100%;
 }
 .label{
 	color:#fff;
@@ -295,8 +295,8 @@ header #logo h1 a:hover{
 .ticket_name{
    font-weight: bold;
    color: #FFF;
-   width: 20%;
-   border-bottom: thin solid #eee;
+   width: 70%;
+   
 }
 .delete{
 	margin-top: 2%;
@@ -359,9 +359,26 @@ ul.tickets li  > a{
 .float-right{
 	float: right;
 	color: #FFF !important;
+	width: 50%;
 }
 .float-left{
 	float: left;
+	color: #FFF;
+	width: 48%;
+}
+.float-left h1{
+   margin-bottom: 5%;
+
+}
+.float-left ul{
+	list-style-type: lower-roman;
+	margin-top: 2%;
+}
+
+.float-left ul li{
+	margin-top: 4%;
+	margin-left: 2%;
+	font-size: 108%;
 }
 
 div.input .email{
@@ -377,14 +394,25 @@ div.input .password{
 	margin-bottom: 1%;
 	border:thin solid #eee;
 	padding:1.5%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+
 
 }
 .form-inputs input[type="password"]{
-	width: 40%;
+	width: 45%;
 	padding: 0.5%;
 	margin-bottom: 1%;
 	padding:1.5%;
 	border:thin solid #eee;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 .form-actions  .button {
 	margin-top: 3%;
@@ -422,4 +450,17 @@ div.input .password{
 	 display: block;
 	 font-weight: bold;
 	 margin-bottom: 1%;
+}
+.email .optional{
+	display: block;
+}
+.password .optional{
+	display: block;
+}
+.string .required{
+	display: block;
+	margin-bottom: 2%;
+}
+#ticket_name{
+	width: 50%;
 }
