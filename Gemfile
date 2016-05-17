@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'bourbon'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use mysql as the database for Active Record
@@ -28,7 +28,7 @@ gem "rspec-rails", "~> 3.2.1"
 gem 'simple_form'
 # Use Unicorn as the app server
 # ggem "rspec-rails", "~> 3.2.1"em 'unicorn'
-
+gem "font-awesome-rails", "~> 4.3"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'

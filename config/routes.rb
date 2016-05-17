@@ -1,19 +1,21 @@
 Rails.application.routes.draw do
-  namespace :admin do
-     get 'application/index'
-     resources :projects, only: [:new, :create, :destroy]
-  end
-
-  devise_for :users
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
+  #namespace :admin do
+  #get 'users/index'
+  #end
   root 'projects#index'
-  
+  namespace :admin do
+    root "application#index"
+    resources :projects, only: [:new, :create, :destroy]
+    resources :users
+  end
   resources :projects, only: [:index, :show, :edit, :update] do
         resources :tickets
    end
+  devise_for :users
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+  # You can have the root of your site routed with "root"
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

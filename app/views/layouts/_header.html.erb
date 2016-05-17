@@ -36,3 +36,23 @@
      </div><!-- users-->
   </div><!-- container -->
 </header>	
+<nav class="navigation">
+    <div class="container">     
+  <div class="nav-header">
+    <div class="menuIcon">
+      <a href="#menuExpand" id="#menuExpand">Menu</a>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><%= link_to 'Home' , root_path %></li>
+        <% admins_only do %>
+             <li><%= link_to 'Admin',  admin_root_path %></li>
+        <% end %>
+
+      </ul>
+    </div>
+  </div>
+
+</div><!-- container -->
+</nav>

@@ -1,7 +1,7 @@
+=begin
 require "rails_helper"
        RSpec.feature "Users can create new tickets" do
-let(:user) { FactoryGirl.create(:user) } before do
-             login_as(user)
+                    
              before do
                    project = FactoryGirl.create(:project, name: "Internet Explorer" , description:" a update or patch")
                    visit project_path(project)
@@ -29,3 +29,4 @@ let(:user) { FactoryGirl.create(:user) } before do
      end
    end
 end
+=end
